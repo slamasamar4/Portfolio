@@ -27,17 +27,7 @@ const Projects = () => {
 
     return (
         <div>
-            <div className="project__filters">
-                {projectsNav.map((item,index) => {
-                    return (
-                        <span onClick={(e) => {
-                            handleClick(e, index);
-                        }}
-                        className={`${active === index ? 'active-project' : ''} project__item`}
-                        key={index}>{item.name}</span>
-                    )
-                })}
-            </div>
+           
             <div className="project__container container grid">
                 {projects.map((item) => {
                     return <ProjectItems item={item} key={item.id}/>
