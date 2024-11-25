@@ -11,8 +11,8 @@
     /* --title-color-dark: hsl(var(--hue), var(--sat), 0%); */
     --title-color-dark: hsl(75, 46%, 51%);
     --text-color: hsl(var(--hue), var(--sat), 46%);
-    --body-color: hsl(var(--hue), var(--sat), 98%);
-    --container-color: #fff;
+    --body-color: #142d4c;
+    --container-color:#385170;
     /* STATIC TYPOGRAPHY */
     --body-font: "Nunito", sans-serif;
     --big-font-size: 3.5rem;
@@ -74,7 +74,7 @@ body, button, input, textarea {
 
 body {
     background-color: var(--body-color);
-    color: var(--text-color);
+    color: #f9fbfc;
 }
 
 h1, h2, h3 {
@@ -94,6 +94,7 @@ button {
     cursor: pointer;
     border: none;
     outline: none;
+    
 }
 
 img {
@@ -131,7 +132,7 @@ img {
 /* BUTTONS */
 .button {
     display: inline-block;
-    background-color: var(--title-color);
+    background-color: #a0dbdb;
     color: var(--container-color);
     padding: 1.25rem 2rem;
     border-radius: 1rem;

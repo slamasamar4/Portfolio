@@ -11,13 +11,13 @@
 .qualification__button {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
-    color: var(--title-color);
+    color: white;
     margin: 0 var(--mb-1);
     cursor: pointer;
 }
 
 .qualification__button:hover {
-    color: var(--title-color-dark);
+    color:white;
 }
 
 .qualification__icon {
@@ -52,12 +52,14 @@
 .qualification__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+    color: aliceblue;
 }
 
 .qualification__subtitle {
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
+    color: aliceblue;
 }
 
 .qualification__calendar {

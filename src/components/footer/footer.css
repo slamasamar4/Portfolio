@@ -8,7 +8,7 @@
 }
 
 .footer__title, .footer__link {
-    color: var(--title-color);
+    color: white;
 }
 
 .footer__title {
@@ -17,7 +17,7 @@
 }
 
 .footer__link:hover {
-    color: var(--title-color-dark);
+    color: white;
 }
 
 .footer__list {
