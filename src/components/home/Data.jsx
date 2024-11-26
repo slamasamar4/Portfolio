@@ -62,6 +62,7 @@ const Data = () => {
         <p className="home__description">
         Third-year software engineering student skilled in Python, JavaScript, and React. Actively seeking practical
 experience in AI through internships or entry-level positions. Open to networking and opportunities.
+bcdshgvcdhgcbla balnadbzhb
         </p>
 
         
