@@ -1,6 +1,3 @@
-Here’s a plain-text guide for deploying your React project to GitHub Pages using the **main branch**:
-
----
 
 # Guide to Deploy the React Project on GitHub Pages
 
