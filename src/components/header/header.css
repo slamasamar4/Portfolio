@@ -39,9 +39,9 @@
     display: none;
 }
 
-/* ACTIVE LINK */
-.active-link, .nav__link:hover {
-    color: yellow
+
+.nav__link:hover {
+    color: yellow;
 }
 
 /* CHANGE HEADER */
