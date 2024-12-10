@@ -7,6 +7,7 @@
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
+ 
 }
 
 .home__social {
@@ -120,7 +121,9 @@
     .home__content {
         grid-template-columns: 100px repeat(2, 1fr);
         column-gap: 1.25rem;
+
     }
+  
 
     .home__hand {
         width: 26px;
@@ -145,7 +148,7 @@
     .home__img {
         width: 250px;
         height: 250px;
-        box-shadow: inset 0 0 0 8px rgb(225 225 225 / 30%);
+
     }
 
     .home__scroll {
