@@ -39,7 +39,10 @@
     display: none;
 }
 
-
+/* ACTIVE LINK // this one let it stuck to that color  .active-link {
+    color: yellow;
+}
+*/
 .nav__link:hover {
     color: yellow;
 }
