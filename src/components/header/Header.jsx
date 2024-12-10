@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import './header.css';
-import { HiOutlineHome, HiOutlineUser, HiOutlineBadgeCheck, HiOutlineClipboardList, HiOutlinePhotograph, HiOutlineMail, HiX, HiOutlineMenu } from "react-icons/hi";
-
+import { HiOutlineHome, HiOutlineBadgeCheck, HiOutlinePhotograph, HiOutlineAcademicCap, HiOutlineMenu, HiX } from "react-icons/hi";
 
 const Header = () => {
     window.addEventListener("scroll", function () {
@@ -25,20 +24,22 @@ const Header = () => {
                                 <HiOutlineHome className="nav__icon" />Home
                             </a>
                         </li>
-                      
                         <li className="nav__item">
                             <a href="#skills" onClick={() => setActiveNav("#skills")}
                                 className={activeNav === "#skills" ? "nav__link active-link" : "nav__link"}>
                                 <HiOutlineBadgeCheck className="nav__icon" />Skills
                             </a>
                         </li>
-
-
-
                         <li className="nav__item">
                             <a href="#portfolio" onClick={() => setActiveNav("#portfolio")}
                                 className={activeNav === "#portfolio" ? "nav__link active-link" : "nav__link"}>
                                 <HiOutlinePhotograph className="nav__icon" />Projects
+                            </a>
+                        </li>
+                        <li className="nav__item">
+                            <a href="#qualification" onClick={() => setActiveNav("#qualification")}
+                                className={activeNav === "#qualification" ? "nav__link active-link" : "nav__link"}>
+                                <HiOutlineAcademicCap className="nav__icon" />Qualification
                             </a>
                         </li>
                     </ul>

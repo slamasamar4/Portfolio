@@ -89,7 +89,8 @@
 
 .home__scroll {
     margin-left: 4rem;
-}
+};
+
 
 .wheel {
     animation: scroll 2s ease infinite;
@@ -109,11 +110,13 @@
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
     margin-left: 2px;
+    color: white;
+    
 }
 
 .home__scroll-arrow {
     font-size: 1.25rem;
-    color:wheat;
+    color : #fff;
 }
 
 /* BREAK POINTS */
