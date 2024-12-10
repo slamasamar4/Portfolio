@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./qualification.css";
 import { HiOutlineAcademicCap, HiOutlineBriefcase, HiOutlineCalendar } from "react-icons/hi";
 
+
 const QualificationComponent = () => {
   const [toggleState, setToggleState] = useState(1);
 
