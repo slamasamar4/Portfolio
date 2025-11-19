@@ -4,7 +4,7 @@ import {  FiGithub, FiLinkedin } from 'react-icons/fi';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
         <div className="footer__container container">
             <h3 className="footer__title">Samar</h3>
             <ul className="footer__list">

@@ -49,6 +49,18 @@
     column-gap: 1.5rem;
 }
 
+/* Center column: center timeline markers */
+.qualification__data > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Right-align text for items placed on the right (even items) */
+.qualification__data:nth-child(even) > div:last-child {
+    text-align: right;
+}
+
 .qualification__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);

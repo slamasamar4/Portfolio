@@ -1,37 +1,46 @@
-import React, { useEffect, useState } from 'react';
-import { projectsData } from "./Data";
-import { projectsNav } from './Data';
+import React, { useEffect, useState, useMemo } from 'react';
+import { projectsData, projectsNav } from "./Data";
 import ProjectItems from "./ProjectItems";
 
 const Projects = () => {
-    const [item, setItem] =  useState({ name: "All" });
-    const [projects, setProjects] = useState([]);
-    const [active, setActive] = useState(0);
+    const [activeNav, setActiveNav] = useState(0);
+    const [filter, setFilter] = useState("All");
+    const [query, setQuery] = useState("");
 
-    useEffect(() => {
-         if(item.name === "All") {
-            setProjects(projectsData);
-         }
-         else{
-            const newProjects = projectsData.filter((project) => {
-                return project.category === item.name;
-            });
-            setProjects(newProjects);
-         }
-    },[item]);
-    
-    const handleClick  = (e, index) => {
-        setItem({ name: e.target.textContent });
-        setActive(index);
+    // derive filtered projects
+    const projects = useMemo(() => {
+        const byCategory = filter === "All" ? projectsData : projectsData.filter(p => p.category === filter);
+        if (!query) return byCategory;
+        const q = query.toLowerCase();
+        return byCategory.filter(p => (p.title + " " + (p.description || "")).toLowerCase().includes(q));
+    }, [filter, query]);
+
+    const handleNavClick = (name, index) => {
+        setFilter(name);
+        setActiveNav(index);
     };
 
     return (
         <div>
-           
+            <div className="project__filters">
+                {projectsNav.map((nav, index) => (
+                    <button
+                        key={nav.name}
+                        type="button"
+                        className={`project__item ${index === activeNav ? 'active__project' : ''}`}
+                        onClick={() => handleNavClick(nav.name, index)}
+                    >
+                        {nav.name}
+                    </button>
+                ))}
+            </div>
+
             <div className="project__container container grid">
-                {projects.map((item) => {
-                    return <ProjectItems item={item} key={item.id}/>
-                })}
+                {projects.length ? (
+                    projects.map((item) => <ProjectItems item={item} key={item.id} />)
+                ) : (
+                    <p style={{ textAlign: 'center', width: '100%', color: 'var(--title-color)' }}>No projects found.</p>
+                )}
             </div>
         </div>
     );
