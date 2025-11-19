@@ -15,12 +15,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-}
-,
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "npm run build && xcopy /E /H /Y build\\* . && git add . && git commit -m \"Deploy React app to GitHub Pages\" && git push origin main",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "firebase-tools": "^11.21.0",
+    "gh-pages": "^6.3.0",
     "rimraf": "^6.0.1"
   }
 }
