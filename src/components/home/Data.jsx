@@ -65,7 +65,7 @@ const Data = () => {
             Full stack Developer
         </h3>
         <p className="home__description">
-Frontend & Fullstack Developer specializing in React and Node.js, with solid experience building modern web apps and deploying them using Docker, Kubernetes, and CI/CD. I’m currently pursuing a Master’s degree in Big Data & Data Science, where I’m strengthening my skills in data engineering, cloud technologies, and machine learning.
+Fullstack Developer specializing in React and Node.js, with solid experience building modern web apps and deploying them using Docker, Kubernetes, and CI/CD. I’m currently pursuing a Master’s degree in Big Data & Data Science, where I’m strengthening my skills in data engineering, cloud technologies, and machine learning.
 
 I enjoy creating clean, efficient user interfaces and designing scalable architectures. My goal is to combine software engineering with data-driven intelligence to build smart, reliable digital products.        </p>
 
